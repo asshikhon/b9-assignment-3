@@ -13,7 +13,10 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                clifford:'#da373d',
+                'btn-color':'#FF4240',
+                'font-color':'#131318',
+                'description-font':'#13131899',
               }
             }
           }
@@ -32,14 +35,144 @@
 <body class="font-manrope">
     <header class="container mx-auto">
 
+        <div class="navbar lg:my-12 mx-auto">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-4">
+        <li><a class="text-[#FF4240] text-base font-bold">Home</a></li>
+        <li><a class="text-base text-[#424247]">About</a></li>
+        <li><a class="text-base text-[#424247]">Pages</a></li>
+        <li><a class="text-base text-[#424247]">Blog</a></li>
+        <li><a class="text-base text-[#424247]">Contact</a></li>
+      </ul>
+    </div>
+    <a class="text-2xl text-font-color lg:text-4xl font-extrabold ">Hockey<span class="text-[#FF4240]">’</span>s</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 gap-11">
+      <li><a class="text-[#FF4240] text-base font-bold">Home</a></li>
+      <li><a class="text-base text-[#424247]">About</a></li>
+      <li><a class="text-base text-[#424247]">Pages</a></li>
+      <li><a class="text-base text-[#424247]">Blog</a></li>
+      <li><a class="text-base text-[#424247]">Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end gap-3 lg:gap-6">
+    <a><img src="./icon/Frame.svg" alt=""></a>
+    <a class="btn bg-btn-color text-white text-[18px] lg:text-xl font-bold px-6">Get Ticket</a>
+  </div>
+</div>
+<!-- banner section -->
+<section class="container mx-auto hidden">
+<div class="carousel w-full ">
+    <div id="slide1" class="carousel-item relative lg:w-full bg-[linear-gradient(180deg,rgba(211,211,211,0.1),rgba(211,211,211,0.1)),url(./images/1.png)] bg-no-repeat bg-cover bg-center h-[80vh]">
+<div class="absolute bottom-5 lg:bottom-8 left-[40%] lg:left-8 space-x-4">
+          <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a> 
+          <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+        </div>
+      </div>
+
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full rounded-3xl" />
+      <div class="absolute bottom-5 lg:bottom-8 left-[40%] lg:left-8 space-x-4">
+        <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a> 
+        <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+      </div>
+    </div> 
+
+</div>
+<div class="bg-[#131318] h-auto w-[303px] lg:w-[566px] rounded-xl lg:bottom-8 lg:right-8 p-4 lg:p-8 absolute right-48">
+    <h3 class="text-white text-2xl font-extrabold pb-4">Meet all the heroes from the field</h3>
+    <p class="text-base text-[#ffffff99] font-medium">Explore diverse heroes from various fields, showcasing talent, courage, and impactful contributions worldwide.</p>
+</div>
+</section>
+
     </header>
 
     <main class="container mx-auto">
 
+        <!-- Professional Hockeys Club section -->
+        <section class="mt-32 ">
+<div class="text-center border-y-2 border-dashed py-8">
+    <h1 class="text-2xl text-font-color lg:text-4xl font-extrabold pb-6">Professional Hockeys Club</h1>
+    <p class="text-base text-description-font font-medium">Top-tier skaters, fierce competition, and relentless pursuit of glory define our professional hockey club's legacy.</p>
+</div>
+<!-- card section -->
+<div class="flex flex-col lg:flex-row justify-between">
+
+
+    <!-- card 1 -->
+<div >
+    <div class="card">
+        <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"> <span class="text-xl text-font-color font-extrabold"> 87%</span></div>
+        </figure>
+        <div class="card-body items-center text-center ">
+          <h2 class="card-title text-font-color text-xl font-semibold">Prayer Facility</h2>
+          <p class="text-base text-description-font font-medium">
+            You sent
+            "Quiet space for reflection, worship, and spiritual connection."</p>
+        </div>
+      </div>
+</div>
+    <!-- card 2 -->
+<div>
+    <div class="card">
+        <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"> <span class="text-xl text-font-color font-extrabold"> 95%</span></div>
+        </figure>
+        <div class="card-body items-center text-center ">
+          <h2 class="card-title text-font-color text-xl font-semibold">Experienced Coach</h2>
+          <p class="text-base text-description-font font-medium">
+            "Seasoned guide empowering growth through personalized coaching expertise."</p>
+        </div>
+      </div>
+</div>
+    <!-- card 3 -->
+<div>
+    <div class="card">
+        <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"> <span class="text-xl text-font-color font-extrabold"> 90%</span></div>
+        </figure>
+        <div class="card-body items-center text-center ">
+          <h2 class="card-title text-font-color text-xl font-semibold">Senior Player</h2>
+          <p class="text-base text-description-font font-medium">"Experienced player excelling with skill, leadership, and strategic prowess."</p>
+        </div>
+      </div>
+</div>
+    <!-- card 4 -->
+<div>
+    <div class="card">
+        <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"> <span class="text-xl text-font-color font-extrabold"> 80%</span></div>
+        </figure>
+        <div class="card-body items-center text-center ">
+          <h2 class="card-title text-font-color text-xl font-semibold">Training Ground</h2>
+          <p class="text-base text-description-font font-medium">"Dedicated space cultivating skills, teamwork, and athletic excellence."</p>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+</div>
+
+        </section>
+
+        
+
+
+
     </main>
     
     <footer>
-        
+
     </footer>
 </body>
 </html>
